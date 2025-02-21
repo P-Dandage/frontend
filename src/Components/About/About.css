@@ -1,0 +1,138 @@
+.About {
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    max-width: 100%;
+}
+
+.About h1 {
+    line-height: 1.2;
+    font-size: 50px;
+    font-weight: 600;
+    margin: 0px 10px;
+    background: linear-gradient(to right, #b390d2dd, rgb(243, 232, 245), #8a73a1dd, white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
+}
+
+.About p {
+    text-align: center;
+    line-height: 1.6;
+    color: rgba(254, 251, 251, 0.75);
+    font-size: 15px;
+    font-weight: 400;
+    word-spacing: 1.5px;
+    letter-spacing: 0.5px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    max-width: 100%;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.section .card {
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 19rem;
+    height: auto;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: rgba(139, 99, 232, 0.128);
+    box-shadow: 1px 5px 17px rgba(32, 138, 238, 0.195);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+}
+
+.section .card:hover {
+    transform: scale(1.05);
+    background-color: rgba(139, 99, 232, 0.162);
+    box-shadow: 2px 7px 15px rgba(91, 172, 248, 0.195);
+}
+
+.section .card img {
+    width: 160px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 2px solid rgba(4, 133, 246, 0.371);
+    box-shadow: 1px 5px 17px rgba(70, 162, 249, 0.496);
+}
+
+.section .card h4 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px 0;
+    letter-spacing: 1px;
+    word-spacing: 1.5px;
+    text-align: center;
+}
+
+.section .card p {
+    font-size: 14px;
+    font-weight: 200;
+   text-align: center;
+    word-spacing: 0.5px;
+    margin: 5px 6px;
+    line-height: 1.4;
+}
+
+.social {
+    margin-top: 40px;
+     
+}
+
+.social svg {
+    margin: 10px 25px;
+    transform: scale(1.6);
+    transition: transform 0.3s ease;
+}
+
+.social svg:hover {
+    transform: scale(1.9);
+}
+
+
+@media (max-width: 768px) {
+    .About h1 {
+        font-size: 40px;
+    }
+
+    .section {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .section .card {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .About h1 {
+        font-size: 32px;
+    }
+
+    .About p {
+        font-size: 14px;
+    }
+
+    .section .card {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .section .card img {
+        width: 100px;
+        height: 100px;
+    }
+}
