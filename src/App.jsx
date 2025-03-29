@@ -7,6 +7,7 @@ import Main_section from './Components/Main_section/Main_section'
 import About from './Components/About/About'
 import Footer from './Components/Footer/Footer'
 import Feature from './Components/Feature/Feature'
+import How from './Components/How/How'
 
 
 function App() {
@@ -18,11 +19,16 @@ function App() {
        <Navbar></Navbar> 
         <Main_section></Main_section> 
     </div>
+
+    
     <div className='feature'>
       <Feature></Feature>
       
      </div>
-
+     
+     <div className='how'>
+      <How></How>
+    </div>
 
     <div className='about'>
     <About> </About>

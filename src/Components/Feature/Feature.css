@@ -31,7 +31,7 @@
     margin: 0 auto;
 }
 
-.Feature .section {
+.Feature .sections {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -41,7 +41,7 @@
     padding: 0 20px;
 }
 
-.Feature .section .card {
+.Feature .sections .card {
     border: 1px solid rgb(224, 230, 247);
     width: 18rem;
     height: 23rem;
@@ -53,62 +53,124 @@
     text-align: center;
 }
 
-.Feature .section .card:hover {
+.Feature .sections .card:hover {
     transform: scale(1.01);
     background-color: white;
     border-color: rgb(187, 202, 245);
     box-shadow: 1px 1px 10px 3px rgba(88, 162, 231, 0.457);
 }
 
-.Feature .section .card h3{
-font-size: 30px;
-font-weight: 500;
-margin: 30px 0;
+.Feature .sections .card h3{
+font-size: 25px;
+font-weight: 400;
+margin: 20px 0;
 letter-spacing: 1px;
-word-spacing: 1.5px;
+word-spacing: 1.2px;
 text-align: center;
 color:  rgb(5, 38, 78);
 }
 
-.Feature .section .card h5 {
-font-size: 14px;
+.Feature .sections .card h5 {
+font-size: 13px;
 font-weight: 300;
 text-align: center;
 word-spacing: 0.5px;
 margin: 20px 6px;
-line-height: 1.4;
+line-height: 1.3;
 color: rgb(79, 94, 100);;
 }
 
+.Feature .sections img {
+    height: 120px;
+    width: 200px;
+    object-fit: cover; 
+    border-radius: 10px; 
+}
 
 
 @media (max-width: 768px) {
-    .Feature h1 {
-        font-size: 40px;
-    }
-
-    .Feature .section {
+    .footer {
         flex-direction: column;
         align-items: center;
-        gap: 15px;
+        text-align: center;
+        padding: 30px 20px;
+        gap: 30px;
     }
 
-    .Feature .section .card {
-        width: 90%;
+    .footer .f1 {
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer .f3 {
+        margin: 0;
+    }
+
+    .footer .social {
+        justify-content: center;
+    }
+
+    /* Ensuring f2 and f3 are side by side on smaller screens */
+    .footer .f2,
+    .footer .f3 {
+        width: 48%;
+        text-align: left;
+    }
+
+    .footer .f2 h3,
+    .footer .f3 h3 {
+        text-align: left;
+    }
+
+    .footer .f2 h5,
+    .footer .f3 h5 {
+        text-align: left;
+    }
+
+    .footer .links-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
     }
 }
 
 @media (max-width: 480px) {
-    .Feature h1 {
-        font-size: 32px;
+    .footer h3 {
+        font-size: 16px;
     }
 
-    .Feature p {
+    .footer h5 {
         font-size: 14px;
     }
 
-    .Feature .section .card {
+    .footer .social svg {
+        transform: scale(1.5);
+    }
+
+    .footer .social svg:hover {
+        transform: scale(1.8);
+    }
+
+    /* Stack f2 and f3 vertically on very small screens */
+    .footer .links-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .f2,
+    .footer .f3 {
         width: 100%;
-        padding: 20px;
+        text-align: center;
+    }
+
+    .footer .f2 h3,
+    .footer .f3 h3 {
+        text-align: center;
+    }
+
+    .footer .f2 h5,
+    .footer .f3 h5 {
+        text-align: center;
     }
 }

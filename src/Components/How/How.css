@@ -1,0 +1,128 @@
+.how {
+    padding: 30px 20px;
+    max-width: 100%;
+}
+
+.how h1 {
+    line-height: 1.2;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0px 10px;
+    color: rgb(5, 38, 78);
+    letter-spacing: 1px;
+}
+
+.how h1 span {
+    color: rgb(60, 101, 245);
+}
+
+.how .f1 {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.how .f2 {
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.how .f2 .f3,
+.how .f2 .f3-1 {
+    display: flex;
+    padding: 20px 15px;
+    margin: 20px 0px;
+    align-items: center;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 12px rgba(32, 138, 238, 0.244);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+
+.how .f2 .f3 {
+    color: rgb(60, 101, 245);
+}
+
+.how .f2 .f3-1 {
+    background-color: rgb(60, 101, 245);
+}
+
+
+.how .f2 .f3 h3 {
+    color: rgb(5, 38, 78);
+    font-weight: 300;
+}
+
+
+.how .f2 .f3-1 h3,
+.how .f2 .f3-1 p {
+    color: white;
+    font-weight: 300;
+}
+
+
+.how .f2 .f3:hover,
+.how .f2 .f3-1:hover {
+    background-color: rgb(60, 101, 245);
+    color: white;
+    transform: scale(1.04);
+    box-shadow: 1px 1px 15px rgba(60, 101, 245, 0.5);
+}
+
+.how .f2 .f3:hover h3,
+.how .f2 .f3:hover p,
+.how .f2 .f3:hover span,
+.how .f2 .f3-1:hover h3,
+.how .f2 .f3-1:hover p,
+.how .f2 .f3-1:hover span {
+    color: white;
+}
+
+
+.custom-text {
+    display: block;
+    font-size: 1.1rem;
+    margin-right: 1rem;
+    font-weight: 300;
+    color: rgb(5, 38, 78);
+}
+
+
+.f4 {
+    display: block; 
+    transform: scale(1.2);
+}
+
+
+@media (max-width: 768px) {
+    .how .f1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+  
+
+   
+    .f4 {
+        display: none;
+    }
+
+  
+    .how .f2 .f3,
+    .how .f2 .f3-1 {
+        width: 100%;
+       
+    }
+    .how .f2 .f3-1 h3{
+        font-size: 15px;
+    }
+    .how .f2 .f3 h3{
+        font-size: 15px;
+    }
+}
