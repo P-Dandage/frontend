@@ -5,7 +5,7 @@ const Main_section = () => {
   return (
     <div className='main_section'>
     
-        <h1> Ace Every Interview <br></br>with <br></br>AI-Powered Performance Evaluation!</h1>
+        <h1> Ace Every <span> Interview <br></br>with <br></br>AI-Powered</span> Performance Evaluation!  </h1>
         <p>Analyze interview performance in real time with AI to gain insights, refine skills, and boost confidence.</p>
         <div className=' main_2'>
             <button className='start'> Get Started </button>

@@ -1,5 +1,5 @@
 .Feature {
-    color: white;
+    
     text-align: center;
     padding: 30px 20px;
     max-width: 100%;
@@ -10,10 +10,11 @@
     font-size: 50px;
     font-weight: 700;
     margin: 0px 10px;
-    background: linear-gradient(to right, #faf9fbdd, rgb(243, 232, 245), #b19cffdd, white);
+    color: rgb(5, 38, 78);;
+    /* background: linear-gradient(to right, #faf9fbdd, rgb(243, 232, 245), #b19cffdd, white);
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
     letter-spacing: 1px;
 }
 
@@ -21,7 +22,7 @@
     text-align: center;
     padding: 20px;
     line-height: 1.6;
-    color: rgba(255, 255, 255, 0.811);
+    color: rgb(79, 94, 100);
     font-size: 17px;
     font-weight: 300;
     word-spacing: 2px;
@@ -41,21 +42,22 @@
 }
 
 .Feature .section .card {
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    border: 1px solid rgb(224, 230, 247);
     width: 18rem;
     height: 23rem;
     padding: 30px;
     border-radius: 15px;
-    background-color: rgba(139, 99, 232, 0.128);
-    box-shadow: 7px 7px 17px rgba(32, 138, 238, 0.31);
+    background-color:rgb(248, 250, 255);
+    box-shadow: 7px 7px 12px rgba(32, 138, 238, 0.244);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     text-align: center;
 }
 
 .Feature .section .card:hover {
-    transform: scale(1.05);
-    background-color: rgba(139, 99, 232, 0.162);
-    box-shadow: 1px 1px 20px 3px rgba(88, 162, 231, 0.457);
+    transform: scale(1.01);
+    background-color: white;
+    border-color: rgb(187, 202, 245);
+    box-shadow: 1px 1px 10px 3px rgba(88, 162, 231, 0.457);
 }
 
 .Feature .section .card h3{
@@ -65,15 +67,17 @@ margin: 30px 0;
 letter-spacing: 1px;
 word-spacing: 1.5px;
 text-align: center;
+color:  rgb(5, 38, 78);
 }
 
 .Feature .section .card h5 {
 font-size: 14px;
-font-weight: 200;
+font-weight: 300;
 text-align: center;
 word-spacing: 0.5px;
 margin: 20px 6px;
 line-height: 1.4;
+color: rgb(79, 94, 100);;
 }
 
 

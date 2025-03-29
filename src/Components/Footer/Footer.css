@@ -1,11 +1,10 @@
 .footer {
-    color: rgb(179, 193, 213);
+    color:  rgb(5, 38, 78);;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
     gap: 50px;
-    background-color: #0b001cf6;
     font-weight: 200;
     padding: 40px 60px;
 }
@@ -24,7 +23,7 @@
 
 .footer .f1 p {
     font-size: 15px;
-    color: rgb(148, 163, 184);
+    color:   rgb(79, 94, 100);
     font-weight: 200;
     max-width: 400px;
 }
@@ -39,16 +38,16 @@
 .footer .social svg {
     transform: scale(1.9);
     transition: transform 0.3s ease, color 0.3s ease;
-    color: white;
+    
 }
 
 .footer .social svg:hover {
     transform: scale(2.1);
-    color: #88c0ff;
+    color: rgb(60, 101, 245);;
 }
 
 .footer h3 {
-    color: white;
+   color:  rgb(5, 38, 78);
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 15px;
@@ -56,14 +55,17 @@
 
 .footer h5 {
     padding: 10px 12px;
+    color:  rgb(79, 94, 100);;
     font-size: 15px;
-    font-weight: 200;
+    font-weight: 400;
     cursor: pointer;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease-in;
+
 }
 
 .footer h5:hover {
-    color: white;
+    color: rgb(60, 101, 245);
+    transform: scale(1.02);
 }
 
 .footer .f3 {

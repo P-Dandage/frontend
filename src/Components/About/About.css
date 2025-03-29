@@ -1,5 +1,5 @@
 .About {
-    color: white;
+    color:  rgb(5, 38, 78);
     text-align: center;
     padding: 30px 20px;
     max-width: 100%;
@@ -10,19 +10,22 @@
     font-size: 50px;
     font-weight: 600;
     margin: 0px 10px;
-    background: linear-gradient(to right, #b390d2dd, rgb(243, 232, 245), #8a73a1dd, white);
+    color:  rgb(5, 38, 78);
+    /* background: linear-gradient(to right, #b390d2dd, rgb(243, 232, 245), #8a73a1dd, white);
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
     letter-spacing: 1px;
 }
-
+.About h1 span{
+    color: rgb(60, 101, 245);
+}
 .About p {
     text-align: center;
     line-height: 1.6;
-    color: rgba(254, 251, 251, 0.75);
+    color:  rgb(79, 94, 100);
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 500;
     word-spacing: 1.5px;
     letter-spacing: 0.5px;
     max-width: 90%;
@@ -41,20 +44,21 @@
 }
 
 .section .card {
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    border: 1px solid rgb(224, 230, 247);
     width: 19rem;
     height: auto;
     padding: 30px;
     border-radius: 15px;
-    background-color: rgba(139, 99, 232, 0.128);
+    background-color:rgb(248, 250, 255);;
     box-shadow: 1px 5px 17px rgba(32, 138, 238, 0.195);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     text-align: center;
 }
 
 .section .card:hover {
-    transform: scale(1.05);
-    background-color: rgba(139, 99, 232, 0.162);
+    transform:  translateY(-10px);  ;
+    background-color: white;
+    border-color: rgb(187, 202, 245);
     box-shadow: 2px 7px 15px rgba(91, 172, 248, 0.195);
 }
 
@@ -74,6 +78,7 @@
     letter-spacing: 1px;
     word-spacing: 1.5px;
     text-align: center;
+    color:  rgb(60, 101, 245);
 }
 
 .section .card p {
@@ -83,6 +88,7 @@
     word-spacing: 0.5px;
     margin: 5px 6px;
     line-height: 1.4;
+    color: rgb(79, 94, 100);;
 }
 
 .social {
@@ -93,11 +99,12 @@
 .social svg {
     margin: 10px 25px;
     transform: scale(1.6);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease-in-out;
+    
 }
 
 .social svg:hover {
-    transform: scale(1.9);
+    transform: scale(1.6) translateY(-5px);  
 }
 
 
