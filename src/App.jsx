@@ -1,48 +1,44 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Navbar from './Components/Navbar/Navbar'
-import Main_section from './Components/Main_section/Main_section'
-import About from './Components/About/About'
-import Footer from './Components/Footer/Footer'
-import Feature from './Components/Feature/Feature'
-import How from './Components/How/How'
+import { useState } from "react";
+import Navbar from "./Components/Navbar/Navbar";
+import Main_section from "./Components/Main_section/Main_section";
+import About from "./Components/About/About";
+import Footer from "./Components/Footer/Footer";
+import Feature from "./Components/Feature/Feature";
+import How from "./Components/How/How";
+import Contact from "./Components/Contact/Contact";
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [page, setPage] = useState("home"); // State to track active page
 
   return (
     <>
-    <div className='header'>
-       <Navbar></Navbar> 
-        <Main_section></Main_section> 
-    </div>
+      <Navbar setPage={setPage} /> {/* Pass setPage to Navbar */}
 
-    
-    <div className='feature'>
-      <Feature></Feature>
-      
-     </div>
-     
-     <div className='how'>
-      <How></How>
-    </div>
+      {page === "home" && (
+        <>
+          <div className="header" id="Home">
+            <Main_section />
+          </div>
+          <div className="feature">
+            <Feature />
+          </div>
+          <div className="how" id="how">
+            <How />
+          </div>
+          <div className="about" id="about">
+            <About />
+          </div>
+        </>
+      )}
 
-    <div className='about'>
-    <About> </About>
-    </div>
-   
-     
+      {page === "Contact" && <Contact></Contact>} 
 
-    <div className='Footer'>
-      <Footer> </Footer>
-    </div>
-    
-  
+      <div className="Footer">
+        <Footer />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

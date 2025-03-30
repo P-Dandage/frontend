@@ -63,9 +63,9 @@
   transform: scale(1.1);
   background-color: rgba(60, 101, 245, 0.1);
 } */
-
-.nav_menu a {
-  text-decoration: none;
+.nav_menu button {
+  background: none;
+  border: none;
   color: var(--text-color);
   cursor: pointer;
   transition: all 0.3s ease;
@@ -76,12 +76,13 @@
   border-radius: 1.25rem;
   font-weight: 400;
   position: relative;
+  font-size: 1rem;
 }
 
-.nav_menu a::after {
+.nav_menu button::after {
   content: "";
   position: absolute;
-  bottom: -3px; 
+  bottom: -3px;
   left: 50%;
   width: 0;
   height: 2px;
@@ -89,7 +90,7 @@
   transition: width 0.3s ease, left 0.3s ease;
 }
 
-.nav_menu a:hover::after {
+.nav_menu button:hover::after {
   width: 100%;
   left: 0;
 }
